@@ -175,9 +175,6 @@ footer {
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('books.list') }}">Book List</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
                     @guest
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('login') }}">Login</a>
@@ -240,8 +237,7 @@ footer {
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-        <h1 class="text-center mb-4 mt-5 text-custom">Our Books</h1>
+        <h1 class="text-center mb-4 mt-5 text-custom">Our Books</h1>
         <div class="row">
             @foreach($books as $book)
             <div class="col-md-4 mb-3">
@@ -265,39 +261,49 @@ footer {
 
     <div class="achievements bg-light text-center">
         <div class="container">
-            <h2>Mengapa EPO</h2>
+            <h2>MENGAPA HARUS EPO?</h2>
             <p>Karna Kami Memiliki Beberapa Keunggulan</p>
             <div class="row">
                 <div class="col-md-4">
                     <img src="{{ asset('kunci.png') }}" class="img-fluid achievement-img" alt="Achievement 1">
-                    <h5>Award 1</h5>
-                    <p>Description of award 1.</p>
+                    <h5>Terjamin</h5>
+                    <p>Layanan kami dijamin memberikan kualitas terbaik untuk setiap penerbitan buku</p>
                 </div>
                 <div class="col-md-4">
                     <img src="{{ asset('lampu.png') }}" class="img-fluid achievement-img" alt="Achievement 2">
-                    <h5>Award 2</h5>
-                    <p>Description of award 2.</p>
+                    <h5>Inovatif</h5>
+                    <p>Kami selalu mencari inovasi baru untuk meningkatkan pengalaman penerbitan Anda</p>
                 </div>
                 <div class="col-md-4">
                     <img src="{{ asset('profesional.png') }}" class="img-fluid achievement-img" alt="Achievement 3">
-                    <h5>Award 3</h5>
-                    <p>Description of award 3.</p>
+                    <h5>Profesional</h5>
+                    <p>Kami menangani setiap proyek dengan profesionalisme tinggi, memastikan kepuasan Anda</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="reasons bg-custom text-center">
+    <div class="vision-mission bg-custom text-center">
         <div class="container">
-            <h2>Why Publish With Us</h2>
-            <ul>
-                <li>High-quality editorial services</li>
-                <li>Wide distribution network</li>
-                <li>Competitive royalties</li>
-                <li>Comprehensive marketing support</li>
-            </ul>
+            <h2>Visi dan Misi Kami</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Visi</h3>
+                    <p>Menjadi penyedia layanan penerbitan buku online terkemuka yang memberikan inspirasi dan nilai tambah bagi setiap penerbitan buku.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Misi</h3>
+                    <ul>
+                        <li>Memberikan layanan editorial berkualitas tinggi.</li>
+                        <li>Membangun jaringan distribusi yang luas.</li>
+                        <li>Menyediakan royalti kompetitif kepada penulis.</li>
+                        <li>Memberikan dukungan pemasaran yang komprehensif.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
+
 
     <footer>
         <div class="footer-content">
